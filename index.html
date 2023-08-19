@@ -18,7 +18,7 @@
             <p> <b>Fair Warning:</b> Your entire mindset is about to change. </p>
         </div>
         <div class="form-container">
-            <form action="https://api.sheetmonkey.io/form/dymgKGcYxGbLqZhFpMhBdy" method="POST" id="contact-form">
+            <form action="https://api.sheetmonkey.io/form/tdKzQGbGiBDDW1tjhqbSxR" method="POST" id="contact-form">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required >
@@ -27,7 +27,14 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
                 </div>
-               
+                <div>
+                    <label for="course">Course</label>
+                    <input type="text" name="course" id="course" required>
+                </div>
+                <div>
+                    <label for="department">Department</label>
+                    <input type="text" name="department" id="department" required >
+                </div>
                 <div>
                     <label for="enroll">Enrollment Number</label>
                     <input type="number" name="enroll" id="enroll" required>
@@ -36,11 +43,10 @@
                     <label for="batch" required>Batch</label>
                     <select name="batch" id="batch">
                         <option default></option>
-                     
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
-                        <option value="2022">2026</option>
-                        <option value="2023">2027</option>
                         <option value="other">OTHER</option>
                     </select>
                 </div>
@@ -49,13 +55,8 @@
                 </div>
             </form>
         </div>
-        <div class="canvas-frame" id="ticket-section" style="display: none;">
-            <h2>TAKE A SCREENSHOT OR SAVE THE TICKET IMAGE</h2>
-            <canvas id="canvas"></canvas>
-            <button id="download">Download</button>
-        </div>
     </div>
-    <div class="credits">Made by Celestial Biscuit IGDTUW"</div>
+    <div class="credits">Made by "Sanskriti Agarwal, Team Meridian et Retrograde @Celestial Biscuit IGDTUW"</div>
 
     <script src="js/index.js"></script>
 </body>

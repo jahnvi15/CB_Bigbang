@@ -14,78 +14,44 @@ const enrollInput = document.getElementById("enroll");
 const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  localStorage.setItem("name", nameInput.value);
-  localStorage.setItem("enroll", enrollInput.value);
-  drawTicket();
-});
-
-const drawTicket = () => {
-  const storedName = localStorage.getItem("name");
-  const storedEnroll = localStorage.getItem("enroll");
-
   ctx.drawImage(background, 0, 0);
   ctx.fillStyle = "#ffffff";
-  ctx.font = "100px verdana, sans-serif";
-  ctx.fillText(storedName, 1258, 400);
+  ctx.font = "50px Poppins, sans-serif";
+  // change position or placement of name here
+  ctx.fillText(nameInput.value, 1290, 360);
   ctx.fillStyle = "#ffffff";
-  ctx.font = "40px verdana, sans-serif";
-  ctx.fillText(storedEnroll, 358, 800);
+  ctx.font = "40px Poppins, sans-serif";
+  // change position or placement of ticketNumber here
+  ctx.fillText(enrollInput.value, 325, 805);
+  document.getElementById("canvas").style.display = "block";
+  document.getElementById("download").style.display = "block";
+  document.getElementById("head").style.display = "block";
+  document.getElementById("hide").style.display = "none";
+});
 
-  document.getElementById("ticket-section").style.display = "block";
+var name = "";
+var ticketNumber = "";
+
+background.onload = function () {
+  ctx.drawImage(background, 0, 0);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "50px Poppins, sans-serif";
+  // change position or placement of name here
+  ctx.fillText(name, 1290, 360);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "40px Poppins, sans-serif";
+  // change position or placement of ticketNumber here
+  ctx.fillText(ticketNumber, 325, 805);
 };
 
 const download = document.getElementById("download");
+
 download.addEventListener("click", function () {
-    const url = canvas.toDataURL();
-    let a = document.createElement("a");
-    a.setAttribute("href", url);
-    a.setAttribute(
-        "download",
-        `Bigbang_${localStorage.getItem("enroll")}_${localStorage.getItem("name")}`
-    );
-    a.click();
-    a.remove();
+  const mycanvas = document.getElementById("canvas");
+  var url = mycanvas.toDataURL();
+  let a = document.createElement("a");
+  a.setAttribute("href", url);
+  a.setAttribute("download", `Bigbang_${enrollInput.value}_${nameInput.value}`);
+  a.click();
+  a.remove();
 });
-
-// ctx.drawImage(background, 0, 0);
-//   ctx.fillStyle = "#ffffff";
-//   ctx.font = "50px Poppins, sans-serif";
-//   // change position or placement of name here
-//   ctx.fillText(nameInput.value, 1290, 360);
-//   ctx.fillStyle = "#ffffff";
-//   ctx.font = "40px Poppins, sans-serif";
-//   // change position or placement of ticketNumber here
-//   ctx.fillText(enrollInput.value, 325, 805);
-//   document.getElementById("canvas").style.display = "block";
-//   document.getElementById("download").style.display = "block";
-//   document.ge
-//   document.getElementById("canvas").style.display = "block";
-//   document.getElementById("download").style.display = "block";
-//   document.getElementById("head").style.display = "block";
-//   document.getElementById("hide").style.display = "none";
-// var name = "";
-// var ticketNumber = "";
-
-// background.onload = function () {
-//   ctx.drawImage(background, 0, 0);
-//   ctx.fillStyle = "#ffffff";
-//   ctx.font = "50px Poppins, sans-serif";
-//   // change position or placement of name here
-//   ctx.fillText(name, 1290, 360);
-//   ctx.fillStyle = "#ffffff";
-//   ctx.font = "40px Poppins, sans-serif";
-//   // change position or placement of ticketNumber here
-//   ctx.fillText(ticketNumber, 325, 805);
-// };
-
-// const download = document.getElementById("download");
-
-// download.addEventListener("click", function () {
-//   const mycanvas = document.getElementById("canvas");
-//   var url = mycanvas.toDataURL();
-//   let a = document.createElement("a");
-//   a.setAttribute("href", url);
-//   a.setAttribute("download", `Bigbang_${enrollInput.value}_${nameInput.value}`);
-//   a.click();
-//   a.remove();
-// });

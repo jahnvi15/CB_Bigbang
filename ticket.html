@@ -4,18 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Display Page</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+   <link rel="stylesheet" href="assets/equinoxFont.css">
+
+    <title>BIGBANG</title>
 </head>
 <body>
     <div class="container">
-        <h2>Your Ticket</h2>
-        <div class="canvas-frame" id="ticket-section">
-            <h3>TAKE A SCREENSHOT OR SAVE THE TICKET IMAGE</h3>
-            <canvas id="canvas"></canvas>
-            <button id="download">Download</button>
+        <div class="logo">            
+            <h2>THE BIG BANG'22</h2>
+            <p> <b>Fair Warning:</b> Your entire mindset is about to change. </p>
+        </div>
+        <div class="form-container">
+            <form action="https://api.sheetmonkey.io/form/tdKzQGbGiBDDW1tjhqbSxR" method="POST" id="contact-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required >
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="course">Course</label>
+                    <input type="text" name="course" id="course" required>
+                </div>
+                <div>
+                    <label for="department">Department</label>
+                    <input type="text" name="department" id="department" required >
+                </div>
+                <div>
+                    <label for="enroll">Enrollment Number</label>
+                    <input type="number" name="enroll" id="enroll" required>
+                </div>
+                <div>
+                    <label for="batch" required>Batch</label>
+                    <select name="batch" id="batch">
+                        <option default></option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="other">OTHER</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="submitBtn" type="submit" >Register</button>
+                </div>
+            </form>
         </div>
     </div>
+    <div class="credits">Made by "Sanskriti Agarwal, Team Meridian et Retrograde @Celestial Biscuit IGDTUW"</div>
 
-    <script src="js/ticket.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
