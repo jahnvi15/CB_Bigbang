@@ -9,7 +9,13 @@ background.crossOrigin = "Anonymous";
 background.src =
   "https://res.cloudinary.com/pooja-gera/image/upload/v1650903571/OrientationTicket_v2_0.5perc_thtcyl.png";
 
-const nameInput = document.getElementById("name");
+// const nameInput = document.getElementById("name");
+(function(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const nameInput = urlParams.get('name')
+        document.getElementById('name').value = nameInput;
+      })();
 const enrollInput = document.getElementById("enroll");
 const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", function (e) {
