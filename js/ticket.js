@@ -8,13 +8,17 @@ const storedName = localStorage.getItem("name");
 const storedEnroll = localStorage.getItem("enroll");
 
 const drawTicket = () => {
-    ctx.fillStyle = "lightgray";
+  var background = new Image();
+  background.src = "https://res.cloudinary.com/pooja-gera/image/upload/v1650903571/OrientationTicket_v2_0.5perc_thtcyl.png";
+  ctx.drawImage(background,0,0);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "100px verdana, sans-serif";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "black";
-    ctx.font = "20px Arial";
-    ctx.fillText("Name: " + storedName, 50, 100);
-    ctx.fillText("Enrollment: " + storedEnroll, 50, 150);
+    ctx.fillText(storedName, 1258, 400);
+     ctx.fillStyle = "#ffffff";
+     ctx.font = "40px verdana, sans-serif";
+   // change position or placement of ticketNumber here
+  ctx.fillText(storedEnroll, 358, 800);
 };
 
 background.onload = drawTicket;
@@ -48,18 +52,18 @@ download.addEventListener("click", function () {
 // const storedName = localStorage.getItem("name");
 // const storedEnroll = localStorage.getItem("enroll");
 
-// submitBtn.addEventListener('click',function(e){
-//   e.preventDefault();
-//  ctx.drawImage(background,0,0);
-//   ctx.fillStyle = "#ffffff";
-//     ctx.font = "100px verdana, sans-serif";
-//     // change position or placement of name here
-//     ctx.fillText(nameInput.value, 1258, 400);
-//     ctx.fillStyle = "#ffffff";
-//     ctx.font = "40px verdana, sans-serif";
-//     // change position or placement of ticketNumber here
-//     ctx.fillText(ticketNumber, 358, 800);
-// });
+submitBtn.addEventListener('click',function(e){
+  e.preventDefault();
+ ctx.drawImage(background,0,0);
+  ctx.fillStyle = "#ffffff";
+    ctx.font = "100px verdana, sans-serif";
+    // change position or placement of name here
+    ctx.fillText(nameInput.value, 1258, 400);
+    ctx.fillStyle = "#ffffff";
+    ctx.font = "40px verdana, sans-serif";
+    // change position or placement of ticketNumber here
+    ctx.fillText(ticketNumber, 358, 800);
+});
 
 // var name = "Pooja Gera";
 // var ticketNumber = "001";
