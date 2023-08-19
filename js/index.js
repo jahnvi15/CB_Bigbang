@@ -37,6 +37,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         document.getElementById("download").style.display = "block";
         document.getElementById("head").style.display = "block";
         document.getElementById("hide").style.display = "none";
+        document.querySelector(".form-container").style.display = "none";
       };
 
       const download = document.getElementById("download");
