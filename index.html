@@ -17,8 +17,16 @@
             <h2>THE BIG BANG'22</h2>
             <p> <b>Fair Warning:</b> Your entire mindset is about to change. </p>
         </div>
+        <div class="container tickets">
+        <div class="canvas-frame">
+            <h2 id="hide">ENTER DETAILS TO GENERATE TICKET</h2>
+            <h2 id="head">TAKE A SCREENSHOT OR SAVE THE TICKET IMAGE</h2>
+            <canvas id="canvas"></canvas>
+           <button id="download" >Download</button>
+          </div>
+        </div>
         <div class="form-container">
-            <form action="https://api.sheetmonkey.io/form/tdKzQGbGiBDDW1tjhqbSxR" method="POST" id="contact-form">
+            <form  id="contact-form">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required >
@@ -50,13 +58,14 @@
                         <option value="other">OTHER</option>
                     </select>
                 </div>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
                 <div>
                     <button class="submitBtn" type="submit" >Register</button>
                 </div>
             </form>
         </div>
     </div>
-    <div class="credits">Made by "Sanskriti Agarwal, Team Meridian et Retrograde @Celestial Biscuit IGDTUW"</div>
+    <div class="credits">Celestial Biscuit IGDTUW</div>
 
     <script src="js/index.js"></script>
 </body>
