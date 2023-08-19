@@ -19,7 +19,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
       const canvas = document.getElementById("canvas");
       const ctx = canvas.getContext("2d");
       canvas.width = 1869;
-canvas.height = 884;
+      canvas.height = 884;
       var background = new Image();
       background.crossOrigin = "Anonymous";
       background.src = "https://res.cloudinary.com/pooja-gera/image/upload/v1650903571/OrientationTicket_v2_0.5perc_thtcyl.png";
@@ -49,6 +49,7 @@ canvas.height = 884;
         a.click();
         a.remove();
       });
+      return false;
     } else {
       console.error("Form submission failed.");
       // Handle the error or provide user feedback.
