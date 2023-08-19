@@ -86,8 +86,8 @@
 }
 
 body{
-   
-  
+    overflow: hidden;
+
     /* background-image: url('../assets/Orientation_Background_NoAstro.jpg'); no-repeat center center fixed;  */
     background-color: #181717;
     background-position-x: 100% ;
