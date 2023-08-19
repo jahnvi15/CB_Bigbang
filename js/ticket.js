@@ -1,3 +1,37 @@
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
+
+canvas.width = 500;
+canvas.height = 300;
+
+const storedName = localStorage.getItem("name");
+const storedEnroll = localStorage.getItem("enroll");
+
+const drawTicket = () => {
+    ctx.fillStyle = "lightgray";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "black";
+    ctx.font = "20px Arial";
+    ctx.fillText("Name: " + storedName, 50, 100);
+    ctx.fillText("Enrollment: " + storedEnroll, 50, 150);
+};
+
+background.onload = drawTicket;
+
+const download = document.getElementById("download");
+download.addEventListener("click", function () {
+    const url = canvas.toDataURL();
+    let a = document.createElement("a");
+    a.setAttribute("href", url);
+    a.setAttribute(
+        "download",
+        `Ticket_${storedEnroll}_${storedName}`
+    );
+    a.click();
+    a.remove();
+});
+
 // var canvas = document.getElementById("canvas"),
 //     ctx = canvas.getContext("2d");
 
