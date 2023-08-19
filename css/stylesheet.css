@@ -1,7 +1,7 @@
 /* @import url(https://allfont.net/allfont.css?fonts=star-jedi); */
 
 #done{
-    background-image: url('../assets/Orientation_Background.jpg');
+    background-image: url('../assets/Orientation_Background_NoAstro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -12,6 +12,14 @@
     margin: auto;
     margin-top: 2%;
     margin-bottom: 5%;
+}
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
 }
 
 .container .canvas-frame h2{
@@ -39,7 +47,7 @@
     margin: auto;
     margin-top: 2%;
     margin-bottom: 4%;
-    background-image: url('../assets/event_CardBackground.jpeg');
+    /* background-image: url('../assets/event_CardBackground.jpeg'); */
     color: black;
     text-shadow: 1px 1px 8px white;
     padding: 1%;
@@ -78,18 +86,25 @@
 }
 
 body{
+   
+  
+    /* background-image: url('../assets/Orientation_Background_NoAstro.jpg'); no-repeat center center fixed;  */
+    background-color: #181717;
+    background-position-x: 100% ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-image: url('../assets/Orientation_Background.jpg');
-    background-size: contain;
-    background-position-x: 50% ;
-   
+    align-items: center;
 }
 
 .container{
-    width: 70%;
+    width: 60%;
     margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
 }
 
 .container .logo{
@@ -117,11 +132,13 @@ body{
 
 
 .container .form-container{
+    display: flex;
+    flex-direction: column;
    background-image: url(../assets/event_CardBackground.jpeg);
    padding: 2%;
     width: 50%;
-    /* margin: auto; */
-    margin-top: 1%;
+   
+    margin-top: 3%;
     border-radius: 5px;
 }
 
@@ -218,7 +235,7 @@ input:focus, textarea:focus, select:focus{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-image: url('../assets/Orientation_Background.jpg');
+        background-image: url('../assets/Orientation_Background_NoAstro.jpg');
         background-size: contain;
         background-position-x: 50% ;  
         background-position-y: 100%; 
