@@ -63,10 +63,10 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 2200,
+      "value": 2900,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 2700
       }
     },
     "color": {
@@ -130,7 +130,7 @@ particlesJS("particles-js", {
       },
       "onclick": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "push"
       },
       "resize": true
     },
