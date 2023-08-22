@@ -27,11 +27,11 @@ document.getElementById("contact-form").addEventListener("submit", async functio
       background.onload = function () {
         ctx.drawImage(background, 0, 0,canvas.width, canvas.height);
         ctx.fillStyle = "#ffffff";
-        ctx.font = "50px Poppins, sans-serif";
-        ctx.fillText(nameInput, 1147, 700);
-        ctx.fillStyle = "#ffffff";
-        ctx.font = "40px Poppins, sans-serif";
-        ctx.fillText(enrollInput, 300, 600);
+        ctx.font = "36px Open Sans, sans-serif";
+        ctx.fillText(nameInput.toUpperCase(), 1170, 100);
+        ctx.fillStyle = "#000000";
+        ctx.font = "40px 'Anonymous Pro', monospace";
+        ctx.fillText(enrollInput, 1615, 725);
 
         document.getElementById("canvas").style.display = "block";
         document.getElementById("download").style.display = "block";

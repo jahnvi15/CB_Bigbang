@@ -1,4 +1,5 @@
 /* @import url(https://allfont.net/allfont.css?fonts=star-jedi); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 #done{
     background-image: url('../assets/Orientation_Background_NoAstro.jpg');
@@ -25,11 +26,12 @@
 .container .canvas-frame h2{
     
     font-size: 1.5rem;
-    font-family: Equinox;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
     color: aliceblue;
     margin: auto;
     margin-top: 1%;
-    text-shadow: 1px 1px 8px white;
+    /* text-shadow: 1px 1px 8px white; */
     text-align: center;
 }
 
@@ -49,9 +51,9 @@
     margin-bottom: 4%;
     /* background-image: url('../assets/event_CardBackground.jpeg'); */
     color: black;
-    text-shadow: 1px 1px 8px white;
+    /* text-shadow: 1px 1px 8px white; */
     padding: 1%;
-    font-family: Equinox;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
@@ -115,21 +117,20 @@ body{
 .container .logo h2{
     
     font-size: 2.5rem;
-    font-family: Equinox;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     color: aliceblue;
     margin: auto;
     margin-top: 1%;
-    text-shadow: 1px 1px 8px white;
+    /* text-shadow: 1px 1px 8px white; */
     text-align: center;
 }
 
 .container .logo p{
     color: white;
     text-align: center;
-    font-family: Equinox;
+    font-family: 'Montserrat', sans-serif;
 
 }
-
 
 .container .form-container{
     display: flex;
@@ -147,7 +148,7 @@ body{
    display: flex;
    flex-direction: column;
    color: black;
-   font-family: Equinox ;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .container .form-container div label{
@@ -161,7 +162,7 @@ body{
     background-color: black;
     padding: 1.5%;
     border-radius: 3px;
-    font-family: 'Montserrat' ;
+    font-family: 'Montserrat', sans-serif;
     border: none;
     color: white;
 }
@@ -176,7 +177,7 @@ input:focus, textarea:focus, select:focus{
 .container .form-container div button{
     cursor: pointer;
     width: 40%;
-    font-family: Equinox;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: auto;
     margin-top: 2%;
@@ -228,7 +229,7 @@ input:focus, textarea:focus, select:focus{
 @media only screen and (max-width: 1340px){
 
     .container .form-container div button{
-        font-family: Equinox;
+        font-family: 'Montserrat', sans-serif;
     }
 
     body{
@@ -256,7 +257,7 @@ input:focus, textarea:focus, select:focus{
     .container .logo h2{
     
         margin-top: 5%;
-        font-family: Equinox ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     }
 
     .container .form-container{
@@ -321,7 +322,7 @@ input:focus, textarea:focus, select:focus{
         
         font-size: 0.7rem;
         padding: 3%;
-        font-family: Equinox;
+        font-family: 'Montserrat', sans-serif;
         
     }
 
@@ -329,7 +330,7 @@ input:focus, textarea:focus, select:focus{
          margin-top: 5%;
         text-align: center;
         font-size: 0.5rem;
-        font-family: Equinox ;
+        font-family: 'Montserrat', sans-serif;
         
     }
 
