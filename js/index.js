@@ -18,20 +18,20 @@ document.getElementById("contact-form").addEventListener("submit", async functio
       
       const canvas = document.getElementById("canvas");
       const ctx = canvas.getContext("2d");
-      canvas.width = 1869;
-      canvas.height = 884;
+      canvas.width = 1900;
+      canvas.height = 800;
       var background = new Image();
       background.crossOrigin = "Anonymous";
-      background.src = "https://res.cloudinary.com/pooja-gera/image/upload/v1650903571/OrientationTicket_v2_0.5perc_thtcyl.png";
+      background.src = "https://res.cloudinary.com/dubcoqabr/image/upload/v1692673129/Untitled_design_11_lueb4l.png";
 
       background.onload = function () {
-        ctx.drawImage(background, 0, 0);
+        ctx.drawImage(background, 0, 0,canvas.width, canvas.height);
         ctx.fillStyle = "#ffffff";
         ctx.font = "50px Poppins, sans-serif";
-        ctx.fillText(nameInput, 1290, 360);
+        ctx.fillText(nameInput, 1147, 700);
         ctx.fillStyle = "#ffffff";
         ctx.font = "40px Poppins, sans-serif";
-        ctx.fillText(enrollInput, 325, 805);
+        ctx.fillText(enrollInput, 300, 600);
 
         document.getElementById("canvas").style.display = "block";
         document.getElementById("download").style.display = "block";
