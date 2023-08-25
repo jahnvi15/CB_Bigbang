@@ -22,7 +22,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
       canvas.height = 800;
       var background = new Image();
       background.crossOrigin = "Anonymous";
-      background.src = "https://res.cloudinary.com/dubcoqabr/image/upload/v1692673129/Untitled_design_11_lueb4l.png";
+      background.src = "https://res.cloudinary.com/dubcoqabr/image/upload/v1692982598/Big_Bang_Ticket-2_wchbaf.png";
 
       background.onload = function () {
         ctx.drawImage(background, 0, 0,canvas.width, canvas.height);
